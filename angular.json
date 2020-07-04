@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kai-web"
+    }
+  },
+  "defaultProject": "kai-web",
+  "cli": {
+    "analytics": "87f35f43-39f8-47bc-86e3-a17599f01677"
+  }
 }
