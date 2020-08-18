@@ -1,0 +1,23 @@
+.bg-image {
+    height: 100%;
+    background-size: cover;
+    width: auto;
+    background-image: url(../../assets/images/fondo_web.png);
+    background-position: 50% 50%;
+}
+
+.container {
+    height: 100%;
+}
+
+#content {
+    width: 50%;
+}
+
+#content img{
+    width: 100%;
+}
+
+.mat-flat-button {
+    width: 400px;
+}

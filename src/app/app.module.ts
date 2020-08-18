@@ -15,6 +15,8 @@ import { UserSignupComponent } from './auth/user-signup/user-signup.component';
 import { UserLoginComponent } from './auth/user-login/user-login.component';
 import { ProfessionalLoginComponent } from './auth/professional-login/professional-login.component';
 import { ProfessionalSignupComponent } from './auth/professional-signup/professional-signup.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ProfessionalSignupComponent } from './auth/professional-signup/professi
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
