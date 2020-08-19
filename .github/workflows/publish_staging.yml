@@ -1,0 +1,15 @@
+name: Publish to Kubernetes Staging
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build_push_image:
+    steps:
+      - name: Image build and push
+        uses: actions/docker/cli@master
+        with:
+          repository: mejiandres
+          tags: "$(echo $GITHUB_SHA | head -c7)"
