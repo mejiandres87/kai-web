@@ -10,6 +10,8 @@ jobs:
     name: Build Image and push
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Image build and push
         uses: docker/build-push-action@v1.1.0
         with:
