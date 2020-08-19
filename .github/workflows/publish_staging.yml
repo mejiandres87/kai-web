@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Image build and push
-        uses: actions/docker/cli@master
+        uses: docker/build-push-action@v1.1.0
         with:
           repository: mejiandres/kai-web
           tags: "$(echo $GITHUB_SHA | head -c7)"
