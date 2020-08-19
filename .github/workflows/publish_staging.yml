@@ -7,9 +7,11 @@ on:
 
 jobs:
   build_push_image:
+    name: Build Image and push
+    runs-on: ubuntu-latest
     steps:
       - name: Image build and push
         uses: actions/docker/cli@master
         with:
-          repository: mejiandres
+          repository: mejiandres/kai-web
           tags: "$(echo $GITHUB_SHA | head -c7)"
