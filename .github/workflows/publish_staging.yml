@@ -18,5 +18,4 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: mejiandres/kai-web
-          tag: latest
-          tag_with_sha: true
+          tags: staging,${{ github.sha }}
