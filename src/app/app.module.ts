@@ -17,6 +17,7 @@ import { ProfessionalLoginComponent } from './auth/professional-login/profession
 import { ProfessionalSignupComponent } from './auth/professional-signup/professional-signup.component';
 import { AppRoutingModule } from "./app-routing.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { ProviderDetailComponent } from './user/provider-detail/provider-detail.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     UserLoginComponent,
     ProfessionalLoginComponent,
     ProfessionalSignupComponent,
+    ProviderDetailComponent,
   ],
   imports: [
     BrowserModule,
