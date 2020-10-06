@@ -18,6 +18,9 @@ import { ProfessionalSignupComponent } from './auth/professional-signup/professi
 import { AppRoutingModule } from "./app-routing.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProviderDetailComponent } from './user/provider-detail/provider-detail.component';
+import { RegistrationService } from './auth/registration.service';
+import { RegistrationComponent } from './welcome/registration/registration.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,15 +36,19 @@ import { ProviderDetailComponent } from './user/provider-detail/provider-detail.
     ProfessionalLoginComponent,
     ProfessionalSignupComponent,
     ProviderDetailComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    RegistrationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
