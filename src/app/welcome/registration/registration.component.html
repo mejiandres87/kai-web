@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 mat-dialog-title>Ingresa tus datos</h1>
+
+    <div mat-dialog-content>
+
+        <form [formGroup]="form" class="registration-form">
+            <div class="controller-container" fxLayout="column" fxLayoutAlign="space-evenly center">
+                <input type="hidden" formControlName="$key">
+                <mat-form-field>
+                    <input formControllName="firstName" matInput placeholder="Nombres">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControllName="lastName" matInput placeholder="Apellidos">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControllName="email" matInput placeholder="Correo electrónico">
+                </mat-form-field>
+            </div>
+
+        </form>
+
+    </div>
+</div>
