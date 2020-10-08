@@ -1,0 +1,20 @@
+<div class="service-detail" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card fxFlex.xs="100%">
+        <mat-card-content fxLayout="column" fxLayoutAlign="center">
+            <div class="content-img">
+                <img [src]="avatar" alt="logo">
+            </div>
+
+            <p class="text-service">
+                {{name}}
+            </p>
+            <a class="detail-service" (click)="openDialogDetail()">
+                Leer más
+            </a>
+        </mat-card-content>
+    </mat-card>
+
+    <button class="btn btn-purple" mat-flat-button (click)="selectedOption()">
+        Seleccionar
+    </button>
+</div>

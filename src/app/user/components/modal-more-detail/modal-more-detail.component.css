@@ -1,0 +1,21 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal img {
+    width: 150px;
+    margin: 1rem auto;
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    color: #F06292;
+    text-align: center;
+}
+
+.modal p {
+    font-size: 1.2rem;
+}

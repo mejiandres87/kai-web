@@ -1,0 +1,53 @@
+.service-detail {
+    width: 280px;
+    margin: .5rem;
+}
+
+mat-card {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+    height: 250px;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 4px 0px 2px 0px rgba(0, 0, 0, 0.2), 2px 3px 2px 0px rgba(0, 0, 0, 0.14), 3px 3px 3px 2px rgba(0, 0, 0, 0.12);
+}
+
+.content-img {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: .7rem;
+}
+
+.content-img img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-service {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    margin: .5rem 0;
+    /* TODO: ocultar nombres largos */
+}
+
+.detail-service {
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: .5rem 0;
+}
+
+.btn-purple {
+    background-color: #4527A0;
+    color: #ffffff;
+}

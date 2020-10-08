@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { MatDialog } from '@angular/material/dialog';
 import { RegistrationComponent } from './registration/registration.component';
 
@@ -9,13 +11,22 @@ import { RegistrationComponent } from './registration/registration.component';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  constructor(
+    private dialog: MatDialog,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
-  openDialog() {
-    this.dialog.open(RegistrationComponent);
+  openDialog(): void {
+    this.dialog.open(RegistrationComponent, {
+      width: '300px',
+    });
+  }
+
+  goToBooktype(): void {
+    this.router.navigate(['/booktype']);
   }
 
 }
