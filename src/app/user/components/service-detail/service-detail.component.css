@@ -1,0 +1,45 @@
+.service-detail {
+    max-width: 300px;
+    margin: .5rem;
+}
+
+mat-card {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 4px 0px 2px 0px rgba(0, 0, 0, 0.2), 2px 3px 2px 0px rgba(0, 0, 0, 0.14), 3px 3px 3px 2px rgba(0, 0, 0, 0.12);
+}
+
+mat-card mat-card-content img {
+    width: 60%;
+    margin: auto;
+    margin-bottom: .5rem;
+}
+
+.text-service {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.time-service {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: .5rem;
+}
+
+.detail-service {
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-purple {
+    background-color: #4527A0;
+    color: #ffffff;
+}

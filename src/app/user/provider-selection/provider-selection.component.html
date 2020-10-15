@@ -1,4 +1,17 @@
-<div class="container bg-image" fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center center">
-    <app-provider-detail></app-provider-detail>
-    <app-provider-detail></app-provider-detail>
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+
+    <span class="btn-back">
+        <img src="../../../assets/icons/keyboard_arrow_left.svg" alt="">
+        Atrás
+    </span>
+
+    <h3 class="title" fxLayoutAlign="center center">Escoge el profesional que más se acomode a tus necesidades</h3>
+    
+    <div class="content-cards" fxLayout="row" fxLayoutAlign="space-evenly center">
+        <app-card-specialist
+            name="Jhon Doe"
+            avatar="../../../../assets/images/excelente.jpg"
+            (selected)="selectedSpecialist($event)"
+        ></app-card-specialist>
+    </div>
 </div>

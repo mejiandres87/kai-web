@@ -1,4 +1,10 @@
-<div class="container bg-image" fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center center">
-    <app-service-detail></app-service-detail>
-    <app-service-detail></app-service-detail>
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+
+    <h3 class="title" fxLayoutAlign="center center">Escoge el valor del servicio que más se acomode a tus necesidades</h3>
+
+    <div class="content-cards" fxLayout="row" fxLayoutAlign="space-evenly center">
+        <app-service-detail type="basic" (selected)="onSelected($event)"></app-service-detail>
+        <app-service-detail type="medium" (selected)="onSelected($event)"></app-service-detail>
+        <app-service-detail type="hide" (selected)="onSelected($event)"></app-service-detail>
+    </div>
 </div>

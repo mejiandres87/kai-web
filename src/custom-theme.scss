@@ -46,6 +46,7 @@ $kai-palette:(
 // hue. Available color palettes: https://material.io/design/color/
 $kai-web-primary: mat-palette($kai-palette);
 $kai-web-accent: mat-palette($mat-pink, A200, A100, A400);
+$kay-web-secondary: mat-palette($mat-purple);
 
 // The warn palette is optional (defaults to red).
 $kai-web-warn: mat-palette($mat-red);
@@ -55,6 +56,7 @@ $kai-web-warn: mat-palette($mat-red);
 $kai-web-theme: mat-light-theme((
   color: (
     primary: $kai-web-primary,
+    secondary: $kay-web-secondary,
     accent: $kai-web-accent,
     warn: $kai-web-warn,
   )
@@ -65,3 +67,10 @@ $kai-web-theme: mat-light-theme((
 // that you are using.
 @include angular-material-theme($kai-web-theme);
 
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}

@@ -1,16 +1,28 @@
 <div class="bg-image">
     <div class="container" fxLayout>
-        <section id="content" fxLayout="column" fxLayoutAlign="space-evenly center">
-            <img class="banner" src="../../assets/images/muy_pronto.png">
+        <section id="content" class="content" fxLayout="column" fxLayoutAlign="space-evenly start">
+            
+            <div class="title">
+                <h5>
+                    ¿Necesitas
+                </h5>
+                <h3>
+                    Ayuda?
+                </h3>
+            </div>
 
-            <img class="logo" src="../../assets/images/logo_blanco.png" alt="kai_logo">
+            
+            <div class="texto">
+                Kai fue creado con un propósito: solucionar la brecha entre la necesidad y el cuidado de salud mental. Buscamos conectar 
+                más personas con más profesionales de una forma eficaz, asequible y empática.
+            </div>
 
-            <button mat-flat-button color="primary" (click)="openDialog()">
+            <button class="btn p-2" mat-flat-button color="primary" (click)="openDialog()">
                 Subscríbete
             </button>
 
-            <button mat-flat-button color="primary">
-                <a routerLink="/booktype">Agenda</a>
+            <button class="btn p-2" mat-flat-button color="primary" (click)="goToBooktype()">
+                Reservar
             </button>
         </section>
     </div>

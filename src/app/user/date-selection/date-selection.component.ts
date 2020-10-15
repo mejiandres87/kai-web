@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-date-selection',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateSelectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  goToSummary(): void {
+    this.router.navigate(['/summary']);
   }
 
 }

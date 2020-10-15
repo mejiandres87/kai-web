@@ -1,0 +1,79 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+
+    <span class="btn-back">
+        <img src="../../../assets/icons/keyboard_arrow_left.svg" alt="">
+        Atrás
+    </span>
+
+    <div class="content-form" fxLayout="row" fxLayoutAlign="start start">
+
+        <div class="w-50 form-section">
+            <form autocomplete="off"
+                [formGroup]="forma" 
+                (ngSubmit)="submitForm()">
+
+                <mat-form-field>
+                    <input name="name" formControllName="name" matInput placeholder="Nombres y Apellidos*">
+                    <mat-error *ngIf="forma.get('name').pristine && forma.get('name').invalid">
+                        El campo nombre es obligatorio
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input name="email" formControllName="email" matInput placeholder="Correo electrónico*">
+                    <mat-error *ngIf="forma.get('email').pristine && forma.get('email').invalid">
+                        El campo correo es obligatorio
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input name="phone" formControllName="phone" matInput placeholder="Teléfono*">
+                    <mat-error *ngIf="forma.get('phone').pristine && forma.get('phone').invalid">
+                        El campo teléfono es obligatorio
+                    </mat-error>
+                </mat-form-field>
+
+                <div class="summary-data">
+                    <div class="value">
+                        Consulta ${{'00'}}USD
+                    </div>
+                    <table class="summary-table">
+                        <tbody>
+                            <tr>
+                                <td class="w-25">Fecha:</td>
+                                <td class="w-50">08/09/2020</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">Hora:</td>
+                                <td class="w-50">17:00</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">Psicólogo:</td>
+                                <td class="w-50">Angela Pradilla</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <span class="terms-conditions">Acepto términos y condiciones de SymplyBook.me*</span>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <span>¿Podemos enviarle promociones e información?</span>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn p-2" mat-flat-button color="primary">
+                        RESERVA
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="w-50 img-section">
+            <div class="content-img">
+                <img src="../../../assets/images/flower.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>

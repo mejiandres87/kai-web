@@ -3,18 +3,32 @@
 
     <div mat-dialog-content>
 
-        <form [formGroup]="form" class="registration-form">
+        <form class="registration-form" autocomplete="off"
+            [formGroup]="form" 
+            (ngSubmit)="submitForm()">
             <div class="controller-container" fxLayout="column" fxLayoutAlign="space-evenly center">
-                <input type="hidden" formControlName="$key">
                 <mat-form-field>
-                    <input formControllName="firstName" matInput placeholder="Nombres">
+                    <input name="firstName" formControllName="firstName" matInput placeholder="Nombres">
+                    <mat-error *ngIf="form.get('firstName').pristine && form.get('firstName').invalid">
+                        El campo nombre es obligatorio
+                    </mat-error>
                 </mat-form-field>
                 <mat-form-field>
-                    <input formControllName="lastName" matInput placeholder="Apellidos">
+                    <input name="lastName" formControllName="lastName" matInput placeholder="Apellidos">
+                    <mat-error *ngIf="form.get('lastName').pristine && form.get('lastName').invalid">
+                        El campo apellidos es obligatorio
+                    </mat-error>
                 </mat-form-field>
                 <mat-form-field>
-                    <input formControllName="email" matInput placeholder="Correo electrónico">
+                    <input name="email" formControllName="email" matInput placeholder="Correo electrónico">
+                    <mat-error *ngIf="form.get('email').pristine && form.get('email').invalid">
+                        El campo correo es obligatorio
+                    </mat-error>
                 </mat-form-field>
+
+                <button class="btn" mat-flat-button color="primary" type="submit">
+                    Subscríbirse
+                </button>
             </div>
 
         </form>

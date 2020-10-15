@@ -1,0 +1,21 @@
+<div class="service-detail" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card fxFlex.xs="100%">
+        <mat-card-content fxLayout="column" fxLayoutAlign="center">
+            <img [src]="types[type].img" alt="logo">
+
+            <p class="text-service">
+                Consulta ${{types[type].price}} USD
+            </p>
+            <span class="time-service">
+                1h
+            </span>
+            <a class="detail-service" (click)="openDialogDetail()">
+                Leer más
+            </a>
+        </mat-card-content>
+    </mat-card>
+
+    <button class="btn btn-purple" mat-flat-button (click)="selectedType()">
+        Seleccionar
+    </button>
+</div>
